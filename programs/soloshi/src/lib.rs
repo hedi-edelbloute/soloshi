@@ -61,6 +61,7 @@ pub struct FeedPet<'info> {
     pub user_token_account: Account<'info, TokenAccount>,
     #[account(mut)]
     pub pet_token_account: Account<'info, TokenAccount>,
+    #[account(mut)]
     pub token_mint: Account<'info, Mint>,
     pub token_program: Program<'info, Token>,
 }

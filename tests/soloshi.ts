@@ -79,6 +79,7 @@ describe("soloshi", () => {
         owner: provider.wallet.publicKey,
         userTokenAccount,
         petTokenAccount,
+        tokenMint: mint,
         tokenProgram: anchor.utils.token.TOKEN_PROGRAM_ID,
       })
       .rpc();
